@@ -1,0 +1,39 @@
+{
+  "login": {
+    "title": "Sign in to Fit Food",
+    "signup_link": "New to Fit Food? Sign up!",
+    "phone": "Phone",
+    "password": "Password",
+    "sign_in": "Sign in",
+    "forgot_password": "Forgot password?"
+  },
+  "general": {
+    "fitFood": "Fit Food",
+    "home": "Home",
+    "forms": {
+      "option1": "Option 1"
+    },
+    "menu": {
+      "dashboard": "Dashboard",
+      "form_elements": "Form Elements",
+      "form_inputs": "Form Inputs",
+      "form_layouts": "Form Layouts",
+      "tables": "Tables",
+      "basic_tables": "Basic Tables",
+      "smart_tables": "Smart Tables",
+      "pages": "Pages",
+      "login": "Login",
+      "register": "Register",
+      "menu_level_1": "Menu Level 1",
+      "menu_level_1_1": "Menu Level 1.1",
+      "menu_level_1_2": "Menu Level 1.2",
+      "menu_level_1_2_1": "Menu Level 1.2.1",
+      "external_link": "External Link"
+    }
+  },
+  "dashboard": {
+    "todo": {
+      "task_todo": "Task to do.."
+    }
+  }
+}
