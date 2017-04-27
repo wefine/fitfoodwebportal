@@ -1,7 +1,7 @@
 {
-  "baseUrl": "/ng2-admin/",
+  "baseUrl": "/",
   "locals": {
-    "url": "http://localhost:8080",
+    "url": "http://localhost:1338",
     "name": "fitfood web portal",
     "owner": "SarojK",
     "description": ""

@@ -54,6 +54,7 @@ import {
 
 import {
   EmailValidator,
+  PhoneValidator,
   EqualPasswordsValidator
 } from './validators';
 
