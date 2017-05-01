@@ -15,60 +15,6 @@ export const PAGES_MENU = [
         }
       },
       {
-        path: 'ui',
-        data: {
-          menu: {
-            title: 'general.menu.ui_features',
-            icon: 'ion-android-laptop',
-            selected: false,
-            expanded: false,
-            order: 300,
-          }
-        },
-        children: [
-          {
-            path: 'typography',
-            data: {
-              menu: {
-                title: 'general.menu.typography',
-              }
-            }
-          },
-          {
-            path: 'buttons',
-            data: {
-              menu: {
-                title: 'general.menu.buttons',
-              }
-            }
-          },
-          {
-            path: 'icons',
-            data: {
-              menu: {
-                title: 'general.menu.icons',
-              }
-            }
-          },
-          {
-            path: 'modals',
-            data: {
-              menu: {
-                title: 'general.menu.modals',
-              }
-            }
-          },
-          {
-            path: 'grid',
-            data: {
-              menu: {
-                title: 'general.menu.grid',
-              }
-            }
-          },
-        ]
-      },
-      {
         path: 'forms',
         data: {
           menu: {
