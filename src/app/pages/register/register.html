@@ -39,11 +39,11 @@
       <div class="form-group row">
         <label for="typeSelect1" class="col-sm-3 control-label">User Type</label>
         <div class="col-sm-9">
-          <select class="form-control" id="typeSelect1">
+          <select [formControl]="typeSelect1" type="select" class="form-control" id="typeSelect1">
             <option></option>
-            <option>Dietician</option>
-            <option>Kitchen</option>
-            <option>Operations</option>
+            <option value="Dietcian">Dietician</option>
+            <option value="Kitchen">Kitchen</option>
+            <option value="Operations">Operations</option>
             <!--<option>Super Admin</option>-->
           </select>
         </div>

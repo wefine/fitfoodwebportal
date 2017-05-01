@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
+import {FormGroup, AbstractControl, SelectControlValueAccessor, FormBuilder, Validators} from '@angular/forms';
 import {EmailValidator, PhoneValidator, EqualPasswordsValidator} from '../../theme/validators';
 
 import 'style-loader!./register.scss';
@@ -15,6 +15,7 @@ export class Register {
   public lastName : AbstractControl;
   public phone : AbstractControl;
   public email : AbstractControl;
+  public userType : AbstractControl;
   public password : AbstractControl;
   public repeatPassword : AbstractControl;
   public passwords : FormGroup;
@@ -28,6 +29,7 @@ export class Register {
       'lastName' : [''],
       'phone' : ['', Validators.compose([Validators.required,PhoneValidator.validate])],
       'email': ['', Validators.compose([Validators.required, EmailValidator.validate])],
+      'userType' : [''],
       'passwords': fb.group({
         'password': ['', Validators.compose([Validators.required, Validators.minLength(4)])],
         'repeatPassword': ['', Validators.compose([Validators.required, Validators.minLength(4)])]
@@ -38,12 +40,15 @@ export class Register {
     this.lastName = this.form.controls['lastName'];
     this.phone = this.form.controls['phone'];
     this.email = this.form.controls['email'];
+    this.userType = this.form.controls['userType'],
     this.passwords = <FormGroup> this.form.controls['passwords'];
     this.password = this.passwords.controls['password'];
     this.repeatPassword = this.passwords.controls['repeatPassword'];
   }
 
   public onSubmit(values:Object):void {
+    console.log(this.form);
+    console.log(values);
     this.submitted = true;
     if (this.form.valid) {
       // your code goes here
